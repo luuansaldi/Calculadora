@@ -49,7 +49,7 @@ namespace Calculadora
                 while (stop != "n")
                 {
                     Calculo();
-                    Console.WriteLine("Para continuar presione Y, para finalizar presione N");
+                    Console.WriteLine("Presione N para finalizar o cualquier tecla para continuar.");
                     stop = Console.ReadLine();
                     stop.ToLower();
                 }
