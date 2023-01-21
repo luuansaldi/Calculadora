@@ -11,6 +11,8 @@ namespace Calculadora
         }
             static void Calculo()
             {
+            try
+            {
                 char operador;
                 Console.WriteLine("Ingrese la operacion que desea realizar(+,-,*,/)");
                 operador = Convert.ToChar(Console.ReadLine());
@@ -40,6 +42,12 @@ namespace Calculadora
                         Console.WriteLine("El operador ingresado fue incorrecto.");
                         break;
                 }
+            }
+            catch (Exception e)
+            {
+
+                Console.WriteLine(e.Message);
+            }
 
             }
             static void ContinuarEnElPrograma()
